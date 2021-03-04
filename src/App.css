@@ -1,38 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeeee;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mask-flex {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fa-fiexed {
+  width: 20px;
+  position: relative;
+  top: 3px;
+  right: 3px;
+  color: #032535;
+  font-size: 1.5rem;
+}
+.mask-fix {
+  width: 45%;
+}
+
+.searchArea {
+  background-color: #fff;
+  max-width: 100%;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.form-check {
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-check .checkbox-fix {
+  position: absolute;
+  top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input[type="checkbox"] {
+  width: 20px;
+  vertical-align: middle;
+  zoom: 130%;
+}
+
+@media (max-width: 800px) {
+  .mask-fix {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .select-fix {
+    display: block;
+    width: 100%;
+  }
+
+  .button-fix {
+    display: block;
+    margin: 15px 0px 15px 0px !important;
+    width: 100%;
   }
 }
